@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Bar</title>
+    <style>
+        body{
+            margin: 10px;
+        }
+        #img_align{
+            text-align: center;
+            padding: 10px;
+        }
+        p{
+            width: 100%;
+        }
+        #logo{
+            width: 250px;
+            height: auto;
+        }
+        #heading{
+            text-align: center;
+            color: rgb(55, 73, 67);
+            margin: 0px;
+            padding-bottom: 20px;
+        }
+        #nav-bar{
+            text-align:center;
+            background-color: aqua;
+        }
+        #nav-bar li{
+            display: inline-block;
+            padding: 15px 10px;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        #container{
+            text-align: center;
+            padding:50px 100px;
+        }
+        #img{
+            width: 100%;
+
+        }
+        .sticky{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+    
+        
+        </style>
+</head>
+<body>
+<div id="img_align">
+    <img id="logo" src="https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/rolex.png" alt="alter images"></div>
+
+    <nav id="nav-bar" class="sticky">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Our Team</li>
+        <li>Client</li>
+        <li>Contact Us</li>
+    </nav>
+<div id="container">
+    <h2 >About Us</h2>
+    <img id="img" src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg" alt="Alter natural image">
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. A aliquam harum assumenda! Possimus inventore dolorum neque tenetur ex sint cum? Quia quidem natus ullam nam deleniti. Omnis aliquid, explicabo ducimus ut repellendus libero architecto at perferendis commodi rem mollitia placeat velit neque fugit pariatur porro fugiat enim officiis quas beatae minus. Modi laboriosam quas deserunt dolor similique quibusdam hic! Nemo expedita temporibus harum quos nobis, saepe, quas odit nam, ipsa eius reiciendis? Eum earum explicabo repellat officia velit atque labore quo quae quaerat repudiandae debitis, odit fuga mollitia excepturi reiciendis deleniti amet nulla asperiores minus reprehenderit? Non saepe ullam qui, debitis sed sint quod ad pariatur nam fugit ea tempora corporis excepturi ipsum cupiditate placeat eaque, eius facilis? Deserunt incidunt odio aperiam corrupti animi! Ducimus culpa tempore aspernatur laudantium reprehenderit deserunt facere itaque iste. Maxime asperiores incidunt quibusdam, eveniet nostrum consequatur cum vitae quo iusto error velit eaque laudantium odit itaque repellat cupiditate quasi voluptatibus ab rerum ad provident deserunt accusamus. Eum quisquam vero laboriosam reprehenderit exercitationem maxime accusamus inventore dolores repudiandae alias. Totam molestias dolor rerum, temporibus esse cum provident, sint velit nesciunt fugit facilis! Ab tempore, itaque provident ducimus dicta laboriosam consequuntur exercitationem minima iusto, enim velit iure illum placeat excepturi eum modi. Fuga alias corporis illo porro enim, dolores voluptate aspernatur ex est? Placeat iusto quo, odio nisi animi accusantium excepturi veniam optio doloribus sunt? Placeat dolores deserunt illo vel, corrupti rem consequuntur, accusamus necessitatibus quas blanditiis sed, et nam ratione! Veritatis repellat quae ea asperiores laborum sit, odio ab exercitationem aliquam cupiditate impedit eveniet quis maxime earum laboriosam illum officia doloribus nobis mollitia. Laborum ad soluta earum corrupti accusamus in molestias explicabo beatae iure laboriosam animi at numquam id incidunt, eaque facere ex, reprehenderit eum veritatis provident sit voluptas voluptate vero repudiandae. Quibusdam corporis placeat voluptatem?
+    </p>
+</div>
+<script>
+    window.addEventListener('scroll', function(){
+        let navbar = document.getElementById('nav-bar');
+        if(window.pageYOffset >= 285){
+            navbar.classList.add('sticky');
+        }else{
+            navbar.classList.remove('sticky');
+        }
+    });
+</script>
+</body>
+</html>
